@@ -98,3 +98,34 @@ if st.button("🔍 Analyze YouTube Video"):
         except RuntimeError as error:
             st.error(f"An error occurred: {error}")
 
+# Add Buy Me a Coffee button at the bottom
+st.markdown("---")  # Separator line
+st.markdown("**Enjoying this app? Support my work:**")
+
+# Embed an HTML button for consistent redirection
+st.markdown(
+    """
+    <form action="https://buymeacoffee.com/aditya_pande" method="get" target="_blank">
+        <button style="
+            background-color: #FFDD00; 
+            color: #000; 
+            border: none; 
+            padding: 10px 20px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 16px; 
+            border-radius: 5px;
+            cursor: pointer;
+        ">
+            ☕ Buy Me a Coffee
+        </button>
+    </form>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+
+
+
